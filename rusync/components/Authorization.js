@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react';
 import {View, Button, TextInput, StyleSheet, SafeAreaView} from 'react-native';
 
 
-const Authorization = ({ onSuccess }) => {
+const Authorization = ({ onSuccess, onUsername }) => {
     const [loginInput, setLogin] = useState('');
     const [passwordInput, setPassword] = useState('');
 
@@ -20,6 +20,7 @@ const Authorization = ({ onSuccess }) => {
                 .then(data => {
                     if (data.success) {
                         alert('Успешный вход!')
+                        onUsername(loginInput)
                         onSuccess();
                     }
                     else {

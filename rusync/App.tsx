@@ -17,16 +17,18 @@ const Drawer = createDrawerNavigator();
 
 const App = () => {
     const [authorizationStatus, setAuthorization] = useState<boolean | null>(null)
+    const [username, setUsername] = useState('');
 
     return (
       <NavigationContainer>
         <Drawer.Navigator initialRouteName="Main">
-            {authorizationStatus ? (<Drawer.Screen name="Личный аккаунт" component={User} />)
+            {authorizationStatus ? (<Drawer.Screen name={username} component={User} />)
                 : (<Drawer.Screen name="Вход">
-                    {() => <Authorization onSuccess={() => setAuthorization(true)} />}
+                    {() => <Authorization onSuccess={() => setAuthorization(true)}
+                                          onUsername={(login: string) => setUsername(login)} />}
                 </Drawer.Screen>)}
             <Drawer.Screen name="Главное" component={MainMenu}></Drawer.Screen>
-            <Drawer.Screen name="Об RUSYNC" component={About}></Drawer.Screen>
+            {/*<Drawer.Screen name="Об RUSYNC" component={About}></Drawer.Screen>*/}
             <Drawer.Screen name="Настройки" component={Settings}></Drawer.Screen>
         </Drawer.Navigator>
       </NavigationContainer>
