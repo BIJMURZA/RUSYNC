@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d4837ae-62f1-4687-99c6-862d1d6bb836" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/rusync/components/MainMenu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rusync/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rusync/components/Authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/components/Authorization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rusync/components/MainMenu.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "BIJMURZA"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BIJMURZA&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -83,7 +84,8 @@
       <option name="presentableId" value="Default" />
       <updated>1706807689472</updated>
       <workItem from="1706807690544" duration="7848000" />
-      <workItem from="1706858426429" duration="7451000" />
+      <workItem from="1706858426429" duration="11691000" />
+      <workItem from="1706874162050" duration="3876000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена навигация">
       <option name="closed" value="true" />
@@ -109,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706863693740</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Рабочая Аутентификация">
+      <option name="closed" value="true" />
+      <created>1706869910878</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706869910878</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +128,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. Добавлена" />
     <MESSAGE value="Добавлена навигация" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена навигация" />
+    <MESSAGE value="Рабочая Аутентификация" />
+    <option name="LAST_COMMIT_MESSAGE" value="Рабочая Аутентификация" />
   </component>
 </project>

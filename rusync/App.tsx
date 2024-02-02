@@ -6,7 +6,7 @@ import {
   SafeAreaView,
   StyleSheet,
 } from 'react-native';
-import MainMenu from './components/MainMenu'
+import MainMenu from './components/MainMenu.tsx'
 import Authorization from './components/Authorization';
 import About from './components/About'
 import Settings from './components/Settings'
