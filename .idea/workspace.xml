@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d4837ae-62f1-4687-99c6-862d1d6bb836" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rusync/components/MainMenu.tsx" afterDir="false" />
+    <list default="true" id="9d4837ae-62f1-4687-99c6-862d1d6bb836" name="Changes" comment="Отображение игр и минимальной цены на нее">
+      <change afterPath="$PROJECT_DIR$/rusync/components/Games.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rusync/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rusync/components/MainMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rusync/components/Authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/components/Authorization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rusync/components/MainMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/components/MainMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rusync/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rusync/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +59,13 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Node.js.Authorization.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;W:/code/game_rusync/test_2_game_rusync/test_game&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -85,7 +90,10 @@
       <updated>1706807689472</updated>
       <workItem from="1706807690544" duration="7848000" />
       <workItem from="1706858426429" duration="11691000" />
-      <workItem from="1706874162050" duration="3876000" />
+      <workItem from="1706874162050" duration="13817000" />
+      <workItem from="1706968521953" duration="2261000" />
+      <workItem from="1707033380665" duration="1198000" />
+      <workItem from="1707136674542" duration="943000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена навигация">
       <option name="closed" value="true" />
@@ -119,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706869910878</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Отображение игр и минимальной цены на нее">
+      <option name="closed" value="true" />
+      <created>1706883683525</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706883683525</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +145,7 @@
     <MESSAGE value="1. Добавлена" />
     <MESSAGE value="Добавлена навигация" />
     <MESSAGE value="Рабочая Аутентификация" />
-    <option name="LAST_COMMIT_MESSAGE" value="Рабочая Аутентификация" />
+    <MESSAGE value="Отображение игр и минимальной цены на нее" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отображение игр и минимальной цены на нее" />
   </component>
 </project>

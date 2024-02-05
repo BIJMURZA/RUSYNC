@@ -1,20 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import {View, SafeAreaView, StyleSheet, Dimensions, Image, Text, ScrollView} from 'react-native';
+import {View, SafeAreaView, StyleSheet, Image, Text, ScrollView, TouchableOpacity} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-type rusync = {
-    aid: number;
-    game_name: string;
-    price: string;
-    game: string;
-    games: string;
-    minPrice: string;
-}
-
-const Width = Dimensions.get('window').width
-const Height = Dimensions.get('window').height
 
 const MainMenu = () => {
-    const [games, setGames] = useState<rusync[]>([]);
+    const [games, setGames] = useState([]);
+    const navigation = useNavigation();
 
     useEffect(() => {
         try {
@@ -35,17 +26,18 @@ const MainMenu = () => {
             <ScrollView>
                 <View style={styles.mainContainer}>
                     {games.map((game, index) => (
-                        <View key={index} style={styles.gameContainer}>
+                        <TouchableOpacity key={index} style={styles.gameContainer} onPress={() => {
+                            navigation.navigate('Games', {aid: game.aid});
+                        }}>
                             <View style={styles.gameImageContainer}>
-                                <Image source={{ uri: `http://192.168.0.117:3000/assets/posters/${game.aid}.jpeg`}} style={styles.gameImage}/>
+                                <Image source={{ uri: `http://192.168.0.117:3000/assets/posters_menu/${game.aid}.jpeg`}} style={styles.gameImage}/>
                             </View>
                             <View style={styles.gameTextContainer}>
                                 <Text numberOfLines={2} ellipsizeMode='tail' style={styles.gameNameText}>{game.game_name}</Text>
                                 <View style={styles.label}></View>
                                 <Text style={styles.gameNameText}>от {game.minPrice} ₽</Text>
                             </View>
-
-                        </View>
+                        </TouchableOpacity>
                     ))}
                 </View>
             </ScrollView>

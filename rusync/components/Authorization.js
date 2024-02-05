@@ -1,5 +1,5 @@
-import React, { useState, useEffect} from 'react';
-import {View, Button, TextInput, StyleSheet, SafeAreaView} from 'react-native';
+import React, { useState } from 'react';
+import { Button, TextInput, StyleSheet, SafeAreaView} from 'react-native';
 
 
 const Authorization = ({ onSuccess, onUsername }) => {
