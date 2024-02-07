@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d4837ae-62f1-4687-99c6-862d1d6bb836" name="Changes" comment="Отображение игр и минимальной цены на нее">
-      <change afterPath="$PROJECT_DIR$/rusync/components/Games.js" afterDir="false" />
+    <list default="true" id="9d4837ae-62f1-4687-99c6-862d1d6bb836" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/rusync/components/Personal_account.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rusync/components/Search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rusync/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rusync/components/Authorization.js" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/components/Authorization.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rusync/components/MainMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/components/MainMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rusync/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rusync/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rusync/components/Games.js" beforeDir="false" afterPath="$PROJECT_DIR$/rusync/components/Games.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rusync/components/User.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;W:/code/game_rusync/test_2_game_rusync/test_game&quot;,
+    &quot;last_opened_file_path&quot;: &quot;W:/code/game_rusync/login_password_test/loginPassword&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -93,7 +93,10 @@
       <workItem from="1706874162050" duration="13817000" />
       <workItem from="1706968521953" duration="2261000" />
       <workItem from="1707033380665" duration="1198000" />
-      <workItem from="1707136674542" duration="943000" />
+      <workItem from="1707136674542" duration="4458000" />
+      <workItem from="1707209254682" duration="17218000" />
+      <workItem from="1707234898052" duration="599000" />
+      <workItem from="1707261523562" duration="9800000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена навигация">
       <option name="closed" value="true" />
@@ -135,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706883683525</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Отбражение страницы с игрой">
+      <option name="closed" value="true" />
+      <created>1707141353883</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707141353883</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +157,7 @@
     <MESSAGE value="Добавлена навигация" />
     <MESSAGE value="Рабочая Аутентификация" />
     <MESSAGE value="Отображение игр и минимальной цены на нее" />
-    <option name="LAST_COMMIT_MESSAGE" value="Отображение игр и минимальной цены на нее" />
+    <MESSAGE value="Отбражение страницы с игрой" />
+    <option name="LAST_COMMIT_MESSAGE" value="Отбражение страницы с игрой" />
   </component>
 </project>

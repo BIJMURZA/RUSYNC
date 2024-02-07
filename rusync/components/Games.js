@@ -37,6 +37,11 @@ const Games = () => {
             .catch (() => alert('Ошибка с сервером! Повторите попытку позже!'))
     }, [aid]);
 
+    const openGame = (gfn) => {
+        const url =
+            `https://play.geforcenow.com/games?game-id=${gfn}`;
+        Linking.openURL(url).catch(error => console.error(error));
+    };
 
     return (
         <SafeAreaView style={styles.mainContainer}>
@@ -160,8 +165,8 @@ const Games = () => {
                                 />
                                 <TouchableOpacity
                                     style={styles.playButton}
-                                    onPress={{}}>
-                                    <Text style={styles.playButtonText}>В разработке</Text>
+                                    onPress={() => openGame(game.aid_gfn)}>
+                                    <Text style={styles.playButtonText}>Играть</Text>
                                 </TouchableOpacity>
                             </View>
                             <View style={styles.marketplaceContainer}>

@@ -6,13 +6,17 @@ import MainMenu from './components/MainMenu.js'
 import Authorization from './components/Authorization';
 import About from './components/About'
 import Settings from './components/Settings'
-import User from './components/User'
+import Personal_account from './components/Personal_account'
 import Games from './components/Games'
+import Search from './components/Search'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
-
 
 const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
+
+type userType = {
+    username: string;
+};
 
 function Root() {
     return (
@@ -31,17 +35,19 @@ function Root() {
 
 const App = () => {
     const [authorizationStatus, setAuthorization] = useState<boolean | null>(null)
-    const [username, setUsername] = useState('');
+    const [user, setUser] = useState<userType | null >(null)
 
     return (
       <NavigationContainer>
         <Drawer.Navigator initialRouteName="Main">
-            {authorizationStatus ? (<Drawer.Screen name={username} component={User} />)
+            {authorizationStatus ? (<Drawer.Screen name={user!.username} component={Personal_account}
+                initialParams={{user: user}}/>)
                 : (<Drawer.Screen name="Вход">
                     {() => <Authorization onSuccess={() => setAuthorization(true)}
-                                          onUsername={(login: string) => setUsername(login)} />}
+                                          onUser={(user: userType) => setUser(user)} />}
                 </Drawer.Screen>)}
             <Drawer.Screen name="Главное" component={Root}></Drawer.Screen>
+            {/*<Drawer.Screen name="Поиск пользователя" component={Search}></Drawer.Screen>*/}
         </Drawer.Navigator>
       </NavigationContainer>
   );
